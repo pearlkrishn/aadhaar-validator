@@ -1,0 +1,31 @@
+{
+    "name": "pearl/aadhaar-validator",
+    "description": "Validate aadhaar using PHP",
+    "type": "library",
+    "keywords": ["aadhaar", "validator", "data validation"],
+    "authors": [
+        {
+            "name": "pearlkrishn",
+            "email": "pearlkrishn@gmail.com"
+        }
+    ],
+    "require": {
+        "php" : "~5.6|~7"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~5.0|~6.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Pearl\\AadhaarValidator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { "Pearl\\AadhaarValidator\\Tests\\": "tests" }
+    },
+    "scripts" : {
+        "test" : "vendor/bin/phpunit tests/  --stderr"
+    },
+    "minimum-stability": "dev"
+}
